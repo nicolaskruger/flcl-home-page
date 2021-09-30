@@ -1,9 +1,20 @@
 import { FC } from "react";
+import { Card, CardComponent } from "../..";
+import { NaotaImg } from "../../../assets";
 
 const HomeScreen: FC = () => {
+
+    const list: Card[] = [
+        {
+            img: NaotaImg,
+            title: "naota",
+            subTitle: `"ordinary"`,
+        }
+    ];
+
     return (
         <div>
-            home
+            {list.map(card => <CardComponent card={card} />)}
         </div>
     )
 }
