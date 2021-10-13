@@ -22,6 +22,7 @@ const Button = styled.button<ButtonProps>`
     align-items: center;
     position: relative;
     width: 200px;
+    min-width: 200px;
     padding-top: 45px;
     padding-bottom: 20px;
     background: ${props => props.theme.yellow};

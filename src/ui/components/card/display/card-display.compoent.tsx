@@ -11,7 +11,9 @@ const Div = styled.div`
     position: relative;
     padding-top: 60px;
     display: flex;
+    overflow-x: hidden;
     flex-direction: column;
+    width: 100%;
 `;
 
 type WarperProps = {
@@ -25,6 +27,7 @@ const Warper = styled.div<WarperProps>`
     gap: 20px;
     padding-left: 10px;
     transform: translateX(${props => `${props.index * -220}px`});
+    width: 100%;
 `;
 const InnerDiv = styled.div`
     display: flex;

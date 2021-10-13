@@ -1,9 +1,6 @@
 import { FC } from "react";
 import styled from "styled-components";
-import { Card, CardComponent } from "../..";
-import { MamimiImg, NaotaImg } from "../../../assets";
-import { HarukoImg } from "../../../assets/img/haruko/haruko.img";
-import { CardDisplay } from "../../components/card";
+import { Header, Section00 } from "./section";
 
 const Div = styled.div`
     background-color: black;
@@ -11,27 +8,11 @@ const Div = styled.div`
 
 const HomeScreen: FC = () => {
 
-    const list: Card[] = [
-        {
-            img: NaotaImg,
-            title: "naota",
-            subTitle: `"ordinary"`,
-        },
-        {
-            img: MamimiImg,
-            title: "mamimi",
-            subTitle: `"swing the bat"`,
-        },
-        {
-            img: HarukoImg,
-            title: "haruko",
-            subTitle: `"evil alien"`,
-        }
-    ];
 
     return (
         <Div>
-            <CardDisplay cards={list} />
+            <Header />
+            <Section00 />
         </Div>
     )
 }
