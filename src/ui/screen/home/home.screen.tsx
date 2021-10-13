@@ -1,6 +1,13 @@
 import { FC } from "react";
+import styled from "styled-components";
 import { Card, CardComponent } from "../..";
-import { NaotaImg } from "../../../assets";
+import { MamimiImg, NaotaImg } from "../../../assets";
+import { HarukoImg } from "../../../assets/img/haruko/haruko.img";
+import { CardDisplay } from "../../components/card";
+
+const Div = styled.div`
+    background-color: black;
+`;
 
 const HomeScreen: FC = () => {
 
@@ -9,13 +16,23 @@ const HomeScreen: FC = () => {
             img: NaotaImg,
             title: "naota",
             subTitle: `"ordinary"`,
+        },
+        {
+            img: MamimiImg,
+            title: "mamimi",
+            subTitle: `"swing the bat"`,
+        },
+        {
+            img: HarukoImg,
+            title: "haruko",
+            subTitle: `"evil alien"`,
         }
     ];
 
     return (
-        <div>
-            {list.map(card => <CardComponent card={card} />)}
-        </div>
+        <Div>
+            <CardDisplay cards={list} />
+        </Div>
     )
 }
 
