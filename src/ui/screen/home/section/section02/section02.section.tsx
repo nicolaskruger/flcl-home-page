@@ -75,6 +75,11 @@ const Section02: FC = () => {
             <SectionContainer>
                 <Div>
                     <NumberLigth>03</NumberLigth>
+                    <ul>
+                        <li>
+
+                        </li>
+                    </ul>
                 </Div>
                 <Div02>
                     <H1Ligth>
