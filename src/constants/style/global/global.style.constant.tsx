@@ -11,6 +11,17 @@ const GlobalStyle = createGlobalStyle`
     * {
         color: ${props => props.theme.white};
     }
+    ul{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        list-style-type: none;
+    }
+    li{
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
 `;
 
 export {

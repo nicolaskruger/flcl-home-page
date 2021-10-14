@@ -11,7 +11,7 @@ declare module 'styled-components' {
 
 const theme: DefaultTheme = {
     yellow: "yellow",
-    yellowGradient: "linear-gradient(90deg, rgba(214,203,31,1) 42%, rgba(244,200,53,1) 67%)",
+    yellowGradient: "linear-gradient(90deg, rgba(255,211,0,1) 42%, rgba(255,241,0,1) 67%)",
     white: "whitesmoke",
     black: "black"
 }

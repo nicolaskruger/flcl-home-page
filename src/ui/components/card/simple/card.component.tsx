@@ -23,7 +23,7 @@ const Button = styled.button<ButtonProps>`
     position: relative;
     width: 200px;
     min-width: 200px;
-    padding-top: 45px;
+    padding-top: 60px;
     padding-bottom: 20px;
     background: ${props => props.theme.yellow};
     background: ${props => props.theme.yellowGradient};
@@ -47,11 +47,11 @@ const Lines = styled.div`
 `;
 
 const H1 = styled.h1`
-    color: ${props => props.theme.white};
+    color: ${props => props.theme.black};
 `;
 
 const H2 = styled.h2`
-    color: ${props => props.theme.white};
+    color: ${props => props.theme.black};
 `;
 
 const CardComponent: FC<Props> = (props) => {

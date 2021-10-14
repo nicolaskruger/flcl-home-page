@@ -1,7 +1,10 @@
 import { FC, SelectHTMLAttributes } from "react";
 
-interface Props extends SelectHTMLAttributes<HTMLSelectElement> {
+interface PropsSelect extends SelectHTMLAttributes<HTMLSelectElement> {
     onChange: (n: any) => void,
+}
+
+interface Props extends PropsSelect {
     options: string[]
 }
 
@@ -26,4 +29,8 @@ const Select: FC<Props> = (props) => {
 
 export {
     Select
+}
+
+export type {
+    PropsSelect
 }
