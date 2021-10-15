@@ -1,0 +1,1 @@
+export * from "./yellow-img/yellow-img.component";

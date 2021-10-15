@@ -1,18 +1,12 @@
 import { FC, useState } from "react";
 import styled from "styled-components";
-import { Button, Card, PropsSelect, SelectDays, SelectMonth, SelectYear } from "../../../..";
+import { Button, Card, ContainerLeftOnly, PropsSelect, SelectDays, SelectMonth, SelectYear } from "../../../..";
 import { HarukoImg, MamimiImg, NaotaImg } from "../../../../../assets";
 import { CardDisplay } from "../../../../components/card";
 
-const Section = styled.section`
+const Section = styled(ContainerLeftOnly)`
     padding-top: 50px;
-    margin-left: calc( ( 100% - 1200px ) / 2 );
-    display: flex;
-    justify-content: space-between;
     padding-bottom: 200px;
-    @media(max-width: 1333px){
-        margin-left: 5%;
-    }
 `;
 
 const Div00 = styled.section`

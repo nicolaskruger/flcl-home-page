@@ -7,3 +7,7 @@ export * from "./bat/bat.img";
 export * from "./mamimi-cigaret/cigarete.img";
 export * from "./mamimi-pick/mamimi-pick";
 export * from "./sleep/sleep.img";
+export * from "./tv/tv.img";
+export * from "./what/what.img";
+export * from "./kanti/kanti.img";
+export * from "./atomosk/atomosk.img";

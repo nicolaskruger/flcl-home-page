@@ -1,5 +1,6 @@
 import { FC, useState } from "react"
 import styled from "styled-components"
+import { LeftRigthClick } from "..";
 import { Card, CardComponent } from "../.."
 import { ArrowBack, ArrowFoward } from "../../../../assets";
 
@@ -29,18 +30,6 @@ const Warper = styled.div<WarperProps>`
     transform: translateX(${props => `${props.index * -220}px`});
     width: 100%;
 `;
-const InnerDiv = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 20px;
-`;
-
-const Button = styled.button`
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`;
 
 const CardDisplay: FC<Props> = ({ cards }) => {
 
@@ -61,15 +50,11 @@ const CardDisplay: FC<Props> = ({ cards }) => {
             <Warper index={curr}>
                 {cards.map((card, index) => <CardComponent hide={curr !== index} onClick={() => setCurr(index)} card={card} />)}
             </Warper>
-            <InnerDiv>
-                <Button onClick={prev} >
-                    <ArrowBack />
-                </Button>
-                <p> FLCL characters </p>
-                <Button onClick={next} >
-                    <ArrowFoward />
-                </Button>
-            </InnerDiv>
+            <LeftRigthClick onClickLeft={prev} onClickRigth={next}>
+                <p>
+                    FLCL characters
+                </p>
+            </LeftRigthClick>
         </Div>
     )
 }
