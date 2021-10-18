@@ -11,3 +11,4 @@ export * from "./tv/tv.img";
 export * from "./what/what.img";
 export * from "./kanti/kanti.img";
 export * from "./atomosk/atomosk.img";
+export * from "./kamon/kamon";
